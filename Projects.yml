@@ -1,0 +1,43 @@
+# higher-order data about the project repos, simply used to initialize the bot
+user:
+        projects:
+                QuEST-Man:
+                        info:
+                                repo : https://github.com/scollet1/QuEST-Man.git
+                DataFlow:
+                        info:
+                                repo : https://github.com/scollet1/dataFlow.git
+                HexParserC:
+                         info:
+                                 repo : https://github.com/scollet1/HexParserC.git
+                Financial_Analysis:
+                        info:
+                                repo : https://github.com/scollet1/Stochastic_predictor.git
+                SofCon:
+                        info:
+                                repo: https://github.com/scollet1/SofCon.git
+                Resume_Builder:
+                        info:
+                                repo: https://github.com/scollet1/LaTeX_Daddy.git
+                SUNN:
+                        info:
+                                repo: https://github.com/scollet1/SUNN.git
+                stdlib:
+                        info:
+                                repo: https://github.com/scollet1/stdlib_42.git
+                Retrobot:
+                        info:
+                                repo: https://github.com/scollet1/Retrobot.git
+                Walker:
+                        info:
+                                repo: https://github.com/scollet1/walker.git
+                GAB:
+                        info:
+                                repo: https://github.com/scollet1/Genetic_Algorithm_Base.git
+                Samura.irc:
+                        info:
+                                repo: https://github.com/scollet1/Samura.irc.git
+                RRPG:
+                        info:
+                                repo: https://github.com/scollet1/RRPG.git
+                                

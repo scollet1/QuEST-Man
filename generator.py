@@ -2,12 +2,13 @@ import json
 from parser import parse
 from manager import Manager
 
-def run():
-    man = Manager()
-    chosenQuest = man.pickQuest()
-    
-    print()
+SAVE_PATH = './Projects.yml'
 
+def generate():
+    man = Manager(SAVE_PATH)
+    chosenQuest = man.pickQuest()
+    man.saveTo(SAVE_PATH)
+    return chosenQuest
 
 if __name__=="__main__":
-    run()
+    generate()
