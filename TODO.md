@@ -13,10 +13,13 @@
 			comprehension
 	- [ ] TODO.md generation
 
- - [ ] comment parsing into tasks
+ - [ ] comment parsing into tasks # TODO : task
+ - [ ] (OPTIONAL) maintain history of nearest function to give context for task
 
 # repo:
+ - [ ] cloning and parsing repository information
 
 # quests:
+ - [ ] define quests
  - [ ] update quest weekly
 
