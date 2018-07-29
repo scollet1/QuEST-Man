@@ -1,4 +1,6 @@
-# files:
+# TODO:
+
+## files:
  - [ ] markdown
 	- [ ] full 	.markdown	\
 			.mdown		\
@@ -16,10 +18,10 @@
  - [ ] comment parsing into tasks # TODO : task
  - [ ] (OPTIONAL) maintain history of nearest function to give context for task
 
-# repo:
+## repo:
  - [ ] cloning and parsing repository information
 
-# quests:
+## quests:
  - [ ] define quests
  - [ ] update quest weekly
 
