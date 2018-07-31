@@ -4,34 +4,34 @@ user:
                 QuEST-Man:
                         info:
                                 repo : https://github.com/scollet1/QuEST-Man.git
-                DataFlow:
+                dataFlow:
                         info:
                                 repo : https://github.com/scollet1/dataFlow.git
                 HexParserC:
                          info:
                                  repo : https://github.com/scollet1/HexParserC.git
-                Financial_Analysis:
+                Stochastic_predictor:
                         info:
                                 repo : https://github.com/scollet1/Stochastic_predictor.git
                 SofCon:
                         info:
                                 repo: https://github.com/scollet1/SofCon.git
-                Resume_Builder:
+                LaTeX_Daddy:
                         info:
                                 repo: https://github.com/scollet1/LaTeX_Daddy.git
                 SUNN:
                         info:
                                 repo: https://github.com/scollet1/SUNN.git
-                stdlib:
+                stdlib_42:
                         info:
                                 repo: https://github.com/scollet1/stdlib_42.git
                 Retrobot:
                         info:
                                 repo: https://github.com/scollet1/Retrobot.git
-                Walker:
+                walker:
                         info:
                                 repo: https://github.com/scollet1/walker.git
-                GAB:
+                Genetic_Algorithm_Basic:
                         info:
                                 repo: https://github.com/scollet1/Genetic_Algorithm_Base.git
                 Samura.irc:

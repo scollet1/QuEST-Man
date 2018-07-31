@@ -1,6 +1,8 @@
 import sys
+import git
 import yaml
-from parser import parse
+import shutil
+from parser import Parser
 from pprint import pprint
 from random import random, choice
 
@@ -18,6 +20,8 @@ class Manager():
         if not self.projDict:
             sys.exit(-1)
         self.questList = self.loadQuestList()
+        print (self.questList)
+        sys.exit(1)
 
     def loadFrom(self, path):
         print (path)
@@ -38,21 +42,23 @@ class Manager():
             print ("Unable to save file with error: ", e)
 
     def loadQuestList(self):
-#        qList = []
-#        while len(qList) < len(self.projDict['user']['projects']):
-#            print(self.projDict['projects'])
-#            for project in self.projDict['user']['projects']:
-#                print(project)
-#                if random() <= self.projDict['user']['projects'][project]['info']['priority']:
-#                    qList.append(project)
-#        return qList
-        return None
-	'''idk what the heck this is
-	saving repos?????
-	what am I saving???????
-	'''
-	# TODO : save to yaml
-        pass
+        '''clone repos into dirs
+        loads repository list and
+        makes a call to parser to
+        obtain task information'''
+        qList = []
+        p = Parser()
+        for repo in self.projDict['user']['projects']:
+            print(repo)
+            try:
+                git.Git('./repos/').clone(self.projDict['user']['projects'][repo]['info']['repo'])
+                qList.append(p.parse_TODOs('./repos' + repo))
+                shutil.rmtree('./repos/' + repo)
+            except Exception as e:
+                print (e)
+                continue
+        return qList
+        # pass
 
     def pickQuest(self):
 #        print(self.questList)

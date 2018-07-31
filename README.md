@@ -16,3 +16,12 @@ In the future I plan to break away from just covering git contributions and mayb
  - [ ] monitor given quests on the changeover to a new quest
  - [ ] dynamically prioritize quests so that old quests are more likely to be completed
  - [ ] score the user and provide a simple UI to view progress
+
+## Pipeline:
+1. Program runs
+2. Program clones repos into tmp
+3. Program parses each line of each file of each repo
+4. Program builds a task list with reference to each repo, line, file
+5. Program returns task list to master TODO in each repo
+6. Program randomly selects from task list
+7. Program terminates or waits 604800 seconds

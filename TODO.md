@@ -1,6 +1,22 @@
 # TODO:
 
 ## files:
+## High Priority:
+ - [ ] cloning and parsing repository information
+ - [ ] comment parsing into tasks # TODO : task
+ - [ ] define quests
+ - [ ] update quest weekly
+
+## Medium Priority:
+ - [ ] store task progress on repo
+ - [ ] (OPTIONAL) maintain line number to give context for task
+
+## Low Priority:
+ - [ ] allow cmd line arguments for:
+	- [ ] picking from all projects
+	- [ ] picking a specific project and recieving a random TODO.md
+ - [ ] automatically convert GitHub commits to fossil and vice versa
+ - [ ] WebUI
  - [ ] markdown
 	- [ ] full 	.markdown	\
 			.mdown		\
@@ -15,17 +31,4 @@
 			comprehension
 	- [ ] TODO.md generation
 
- - [ ] comment parsing into tasks # TODO : task
- - [ ] (OPTIONAL) maintain history of nearest function to give context for task
-
-## repo:
- - [ ] automatically convert GitHub commits to fossil and vice versa
- - [ ] cloning and parsing repository information
- - [ ] store task progress on repo
-
-## quests:
- - [ ] WebUI
 	- [ ] capture user task submissions w/ optional pseudocode
- - [ ] define quests
- - [ ] update quest weekly
-

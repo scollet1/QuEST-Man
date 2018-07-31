@@ -1,6 +1,8 @@
+import os
 import re
 import sys
-import json
+import glob
+import yaml
 import subprocess
 
 def scrape_stdout(cmd):
@@ -41,8 +43,25 @@ class Parser():
 		@return: List of (person, date, file, line, text) tuples corresponding to
 		TODO comments in the given sources.
 		"""
+                comments = []
+                print (repo_PATH)
+                for (dirpath, dirnames, filenames) in os.walk(repo_PATH, topdown=True, onerror=None, followlinks=False):
+                    print(filenames)
+                    for f in filenames:
+                        with open(f, 'r') as file:
+                            for line in file:
+                                line = line.strip()
+                                if line.startswith("# TODO"):
+                                    elements = line.split(':')
+                                    print (elements)
+                                    todo_info = (   elements[2],
+                                                    elements[1], f,
+                                                    elements[3].strip())
+                                comments.append(todo_info)
+                print (comments)
+                return comments
 
-
+                '''
 		# TODO : append /TODOs/ to /TODO.md/
 		comments = []
 		# TODO : recursively search all files in repo_PATH
@@ -62,6 +81,7 @@ class Parser():
 					elements[3].strip())
 				comments.append(todo_info)
 		return comments
+                '''
 
 	def parse_repo_stats(self):
 		'''parse repo for repo in repos:
@@ -78,7 +98,7 @@ class Parser():
 		subprocess.call(['./cloc-git.sh https://github.com/scollet1/Retrobot.git'], shell=True)
 		try:
 			with open('out.txt') as file:
-			for line in file:
+			    for line in file:
 				if 'SUM' in line:
 					# TODO : make pretty
 					x = list(map(int, re.compile('\d+(?:\.\d+)?').findall(line))) 
