@@ -6,6 +6,10 @@
  - [ ] comment parsing into tasks # TODO : task
  - [ ] define quests
  - [ ] update quest weekly
+ - [ ] full assertions
+	- [ ] repos/ dir
+	- [ ] all cloned dirs
+	- [ ] all files to open/write/read
 
 ## Medium Priority:
  - [ ] store task progress on repo
