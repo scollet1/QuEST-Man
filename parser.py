@@ -52,6 +52,8 @@ class Parser():
 			print('files == ', filenames)
 #		sys.exit(1)
 			for f in filenames:
+				if f == 'TODO.md':
+					continue
 				lineN = 0
 				curr = os.path.join(dirpath, f)
 				try:
