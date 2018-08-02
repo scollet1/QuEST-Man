@@ -2,8 +2,8 @@
 
 ## files:
 ## High Priority:
- - [ ] cloning and parsing repository information
- - [ ] comment parsing into tasks # TODO : task
+ - [x] cloning and parsing repository information
+ - [x] comment parsing into tasks # TODO : task
  - [ ] define quests
  - [ ] update quest weekly
  - [ ] full assertions

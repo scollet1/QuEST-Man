@@ -7,8 +7,12 @@ SAVE_PATH = './Projects.yml'
 def generate():
     man = Manager(SAVE_PATH)
     chosenQuest = man.pickQuest()
-    man.saveTo(SAVE_PATH)
     return chosenQuest
 
 if __name__=="__main__":
-    generate()
+    print ()
+    print ()
+    print ()
+    print ()
+    print ()
+    print(generate())

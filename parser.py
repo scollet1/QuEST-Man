@@ -65,7 +65,7 @@ class Parser():
 								print ('elements == ', elements)
 								proj = repo_PATH.replace('./repos/', '')
 								todo_info = (	repo_PATH.replace('./repos/', ''),
-										elements[1],
+										elements[1].strip(),
 										curr.replace('/repos/', ''), lineN)
 								if todo_info is not None:
 									comments.append(todo_info)

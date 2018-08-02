@@ -20,8 +20,8 @@ class Manager():
         if not self.projDict:
             sys.exit(-1)
         self.questList = self.loadQuestList()
-        print (self.questList)
-        sys.exit(1)
+#        print(self.questList)
+#        sys.exit(1)
 
     def loadFrom(self, path):
         print (path)
@@ -62,7 +62,12 @@ class Manager():
 
     def pickQuest(self):
 #        print(self.questList)
-        return choice(self.questList)
+	p = None; q = None
+	while not p:
+		p = choice(self.questList)
+	while not q:
+		q = choice(p)
+        return q
 
     def updatePriority(self, priority, projectName):
         self.projDict['projects']['projectName']['info']['priority'] = priority
