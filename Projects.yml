@@ -33,7 +33,7 @@ user:
                                 repo: https://github.com/scollet1/walker.git
                 Genetic_Algorithm_Basic:
                         info:
-                                repo: https://github.com/scollet1/Genetic_Algorithm_Base.git
+                                repo: https://github.com/scollet1/Genetic_Algorithm_Basic.git
                 Samura.irc:
                         info:
                                 repo: https://github.com/scollet1/Samura.irc.git

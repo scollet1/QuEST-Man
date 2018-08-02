@@ -52,7 +52,7 @@ class Manager():
             print(repo)
             try:
                 git.Git('./repos/').clone(self.projDict['user']['projects'][repo]['info']['repo'])
-                qList.append(p.parse_TODOs('./repos' + repo))
+                qList.append(p.parse_TODOs('./repos/' + repo))
                 shutil.rmtree('./repos/' + repo)
             except Exception as e:
                 print (e)
